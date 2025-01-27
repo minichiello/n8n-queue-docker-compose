@@ -69,6 +69,7 @@ services:
     user: node
     environment:
       - N8N_HOST=${SUBDOMAIN}.${DOMAIN_NAME}
+      - N8N_WEBHOOK_URL=${WEBHOOK_URL}
       - DB_TYPE=postgresdb
       - DB_POSTGRESDB_HOST=postgres
       - DB_POSTGRESDB_PORT=5432
