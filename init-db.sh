@@ -12,7 +12,7 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-E
   END
   \$do\$;
 
-  -- Ensure the non-root user has the necessary privilegesecessários
+  -- Ensure the non-root user has the necessary privileges
   GRANT ALL PRIVILEGES ON DATABASE $POSTGRES_DB TO $POSTGRES_NON_ROOT_USER;
   
   -- Connect to the n8n database and grant privileges on all future schemas
